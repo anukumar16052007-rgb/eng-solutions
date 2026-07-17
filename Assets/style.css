@@ -1,0 +1,1240 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#fff;
+}
+
+header{
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.navbar{
+    padding:18px 0;
+}
+
+.navbar-brand{
+    font-size:32px;
+    font-weight:700;
+    color:#000;
+}
+
+.navbar-nav{
+    gap:35px;
+}
+
+.navbar-nav .nav-link{
+    color:#000;
+    font-size:18px;
+    font-weight:500;
+}
+
+.navbar-nav .nav-link:hover{
+    color:#0d6efd;
+}
+
+.navbar-toggler{
+    border:none;
+    box-shadow:none !important;
+}
+
+@media (max-width:991.98px){
+
+    .navbar-collapse{
+        margin-top:15px;
+    }
+
+    .navbar-nav{
+        gap:10px;
+        text-align:center;
+    }
+
+    .navbar-nav .nav-link{
+        padding:10px 0;
+    }
+
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    position:relative;
+    height:700px;
+     background: url("Resource/hero-section.png") center center/cover no-repeat;
+    overflow:hidden;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(4,41,120,.88);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:100%;
+}
+
+
+/* LEFT */
+
+.left{
+    width:50%;
+    color:#fff;
+}
+
+.clients{
+    color:#ffc94d;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.left h1{
+    font-size:45px;
+    line-height:1.10;
+    margin:20px 0;
+    font-weight:300;
+}
+
+.left h1 strong{
+    font-weight:700;
+}
+
+.left p{
+    width:530px;
+    font-size:18px;
+    line-height:30px;
+    color:#d8d8d8;
+    margin-bottom:45px;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn{
+    text-decoration:none;
+    padding:18px 36px;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+   
+}
+
+.btn-outline{
+    border:2px solid rgba(255,255,255,.5) !important;
+    color:#fff !important;
+}
+
+.btn-outline:hover{
+    background:#fff !important;
+    color:#123a8b !important;
+}
+
+.btn-yellow{
+    background:#f6b632 !important;
+    color:#111;
+}
+
+.btn-yellow:hover{
+    background:#ffc94d !important;
+}
+
+/* RIGHT */
+
+.right{
+    width:50%;
+    position:relative;
+    height:100%;
+}
+
+/* Student */
+
+.student{
+    position:absolute;
+    width:450px;
+    bottom:0;
+    right:50px;
+    z-index:5;
+}
+
+/* CAD Image */
+
+.cad{
+    position:absolute;
+    width:350px;
+    top:150px;
+    left:500x;
+    transform:rotate(7deg);
+    border-radius:12px;
+    /* box-shadow:0 1px 0px rgba(0,0,0,.35); */
+    z-index:3;
+    right: 270px;
+    margin-left: 15px;
+}
+
+/* Tablet */
+
+.tablet{
+    position:absolute;
+    width:350px;
+    right:-90px;
+    top:200px;
+    transform:rotate(10deg);
+    border-radius:18px;
+    /* box-shadow:0 15px 35px rgba(0,0,0,.35); */
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:992px){
+
+.hero{
+height:auto;
+padding:80px 0;
+}
+
+.hero-content{
+flex-direction:column;
+text-align:center;
+}
+
+.left{
+width:100%;
+}
+
+.left p{
+width:100%;
+}
+
+.right{
+width:100%;
+height:700px;
+margin-top:40px;
+}
+
+.student{
+position:absolute;
+width:350px;
+right:50%;
+transform:translateX(50%);
+}
+
+.cad{
+width:250px;
+left:20%;
+top:80px;
+}
+
+.tablet{
+width:170px;
+right:15%;
+top:230px;
+}
+
+nav ul{
+gap:20px;
+}
+
+.left h1{
+font-size:44px;
+}
+
+.left p{
+font-size:18px;
+line-height:30px;
+}
+
+}
+
+/* ....................................................... */
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#ffffff;
+}
+
+/*=========================
+    WHY CHOOSE US
+=========================*/
+
+.why-choose{
+    width:100%;
+    padding:90px 8%;
+    background:#ffffff;
+    
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.subtitle{
+    display:block;
+    text-align:center;
+    color:#0d63ff;
+    font-size:16px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:15px;
+}
+
+.why-choose h2{
+    text-align:center;
+    font-size:40px;
+    font-weight:700;
+    color:#222;
+    margin-bottom:70px;
+}
+
+/*=========================
+      Feature Cards
+=========================*/
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.feature-card{
+    text-align:left;
+}
+
+.icon{
+    width:50px;
+    height:50px;
+    background:#0b3576;
+    border-radius:8px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:25px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.icon i{
+    color:#fff;
+    font-size:22px;
+}
+
+.feature-card h3{
+    font-size:18px;
+    color:#111;
+    font-weight:700;
+    margin-bottom:18px;
+    line-height:1.3;
+}
+
+.feature-card p{
+    font-size:16px;
+    color:#666;
+    line-height:1.7;
+}
+
+/*=========================
+      Hover Effect
+=========================*/
+
+.feature-card:hover .icon{
+    background:#0056ff;
+    transform:translateY(-5px);
+    transition:.3s;
+}
+
+.feature-card:hover h3{
+    color:#0056ff;
+    transition:.3s;
+}
+
+/*=========================
+      Responsive
+=========================*/
+
+@media(max-width:992px){
+
+.features{
+    grid-template-columns:repeat(2,1fr);
+    gap:40px;
+}
+
+.why-choose h2{
+    font-size:38px;
+}
+
+.feature-card h3{
+    font-size:24px;
+}
+
+}
+
+@media(max-width:768px){
+
+.features{
+    grid-template-columns:1fr;
+    gap:35px;
+}
+
+.why-choose{
+    padding:70px 6%;
+}
+
+.subtitle{
+    font-size:14px;
+}
+
+.why-choose h2{
+    font-size:32px;
+}
+
+.feature-card{
+    text-align:center;
+}
+
+.icon{
+    margin:0 auto 20px;
+}
+
+.feature-card h3{
+    font-size:22px;
+}
+
+.feature-card p{
+    font-size:16px;
+}
+
+}
+
+/* ////////////////////////////////////// */
+
+/*==============================
+         ABOUT SECTION
+==============================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#ffffff;
+}
+
+.about{
+    width:100%;
+    padding:80px 0;
+}
+
+.about .container{
+    width:90%;
+    max-width:1250px;
+    margin:auto;
+    background:#FDEAA0;
+    border-radius:25px;
+    padding:80px 70px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:80px;
+}
+
+/*==============================
+        LEFT IMAGE
+==============================*/
+
+.about-image{
+    width:48%;
+    position:relative;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:18px;
+    display:block;
+}
+
+/* Experience Box */
+
+.experience-box{
+    position:absolute;
+    bottom:-25px;
+    right:-35px;
+
+    background:#ffffff;
+    border-radius:10px;
+    padding:18px 25px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+}
+
+.experience-box h2{
+    font-size:42px;
+    font-weight:700;
+    color:#2F80ED;
+    line-height:1;
+}
+
+.experience-box h3{
+    font-size:26px;
+    font-weight:700;
+    color:#C3377A;
+    line-height:1.2;
+}
+
+/*==============================
+       RIGHT CONTENT
+==============================*/
+
+.about-content{
+    width:48%;
+}
+
+.about-content span{
+    display:block;
+    font-size:18px;
+    font-weight:600;
+    color:#111;
+    letter-spacing:1px;
+    margin-bottom:25px;
+}
+
+.about-content h1{
+    font-size:30px;
+    font-weight:700;
+    color:#111;
+    line-height:1.2;
+    margin-bottom:25px;
+}
+
+.about-content p{
+    font-size:18px;
+    color:#222;
+    line-height:1.8;
+    text-align: justify;
+}
+
+/*==============================
+        RESPONSIVE
+==============================*/
+
+@media(max-width:992px){
+
+.about .container{
+    flex-direction:column;
+    padding:50px 35px;
+}
+
+.about-image,
+.about-content{
+    width:100%;
+}
+
+.about-content{
+    margin-top:40px;
+}
+
+.about-content h1{
+    font-size:38px;
+}
+
+.about-content p{
+    font-size:18px;
+}
+
+.experience-box{
+    right:20px;
+    bottom:-20px;
+}
+
+}
+
+@media(max-width:768px){
+
+.about{
+    padding:40px 0;
+}
+
+.about .container{
+    padding:35px 20px;
+}
+
+.about-content h1{
+    font-size:30px;
+}
+
+.about-content p{
+    font-size:16px;
+}
+
+.experience-box{
+    padding:15px 20px;
+}
+
+.experience-box h2{
+    font-size:30px;
+}
+
+.experience-box h3{
+    font-size:20px;
+}
+
+}
+
+/* ////////////////////////////////// */
+
+/* ===========================
+   GOOGLE FONT
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#fff;
+    color:#222;
+}
+
+/*==============================
+        SECTION
+===============================*/
+
+.services-section{
+    width:100%;
+    padding:90px 7%;
+    background:#fff;
+}
+
+/*==============================
+      TITLE
+===============================*/
+
+.section-title{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.section-title span{
+    color:#0057ff;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.section-title h2{
+    margin-top:10px;
+    font-size:26px;
+    font-weight:700;
+    color:#111;
+}
+
+/*==============================
+      CARDS
+===============================*/
+
+.service-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.service-card{
+
+    background:#fff;
+    border-radius:22px;
+    padding:20px;
+
+    box-shadow:
+    10px 20px 15px rgba(0,0,0,.08);
+
+    transition:.4s ease;
+    overflow:hidden;
+    width: 100%;
+    height: auto;
+}
+
+.service-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+    5px 10px 10px rgba(0,0,0,.18);
+
+}
+
+/*==============================
+       BADGE
+===============================*/
+
+.badge{
+
+    display:inline-block;
+
+    background:#E8F0FF;
+
+    color:#003B9A;
+
+    padding:6px 15px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    margin-bottom:15px;
+
+}
+
+/*==============================
+       TITLE
+===============================*/
+
+.service-card h3{
+
+    font-size:20px;
+
+    line-height:20px;
+
+    margin-bottom:15px;
+
+    font-weight:800;
+
+}
+
+/*==============================
+        TEXT
+===============================*/
+
+.service-card p{
+
+    font-size:14px;
+
+    color:#666;
+
+    line-height:20px;
+
+    margin-bottom:26px;
+
+}
+
+/*==============================
+        IMAGE
+===============================*/
+
+.service-card img{
+
+    width:100%;
+
+    height:150px;
+
+    object-fit:contain;
+
+    transition:.5s;
+
+}
+
+.service-card:hover img{
+
+    transform:scale(1.06);
+
+}
+
+/*==============================
+      FOOTER
+===============================*/
+
+.card-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:20px;
+
+}
+
+.card-footer a{
+
+    text-decoration:none;
+
+    color:#0057ff;
+
+    font-weight:600;
+
+    font-size:17px;
+
+}
+
+.card-footer span{
+
+    color:#0057ff;
+
+    font-size:25px;
+
+    transition:.3s;
+
+}
+
+.service-card:hover .card-footer span{
+
+    transform:translateX(10px);
+
+}
+
+/*==============================
+      BUTTON
+===============================*/
+
+.service-btn{
+
+    text-align:center;
+
+    margin-top:55px;
+
+}
+
+.all-service-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:16px 34px;
+
+    border:2px solid #222;
+
+    text-decoration:none;
+
+    color:#111;
+
+    border-radius:15px;
+
+    font-weight:600;
+
+    transition:.4s;
+
+}
+
+.all-service-btn:hover{
+
+    background:#0057ff;
+
+    border-color:#0057ff;
+
+    color:#fff;
+
+}
+
+.all-service-btn span{
+
+    font-size:22px;
+
+    transition:.3s;
+
+}
+
+.all-service-btn:hover span{
+
+    transform:translateX(8px);
+
+}
+
+/*==============================
+     TABLET
+===============================*/
+
+@media(max-width:1200px){
+
+.service-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.section-title h2{
+
+font-size:38px;
+
+}
+
+}
+
+/*==============================
+       MOBILE
+===============================*/
+
+@media(max-width:768px){
+
+.services-section{
+
+padding:70px 20px;
+
+}
+
+.section-title h2{
+
+font-size:30px;
+
+}
+
+.service-container{
+
+grid-template-columns:1fr;
+
+gap:25px;
+
+}
+
+.service-card{
+
+padding:20px;
+
+}
+
+.service-card h3{
+
+font-size:24px;
+
+line-height:34px;
+
+}
+
+.service-card p{
+
+font-size:15px;
+
+line-height:26px;
+
+}
+
+.service-card img{
+
+height:180px;
+
+}
+
+.all-service-btn{
+
+padding:14px 28px;
+
+font-size:15px;
+
+}
+
+}
+
+/*==============================
+    SMALL MOBILE
+===============================*/
+
+@media(max-width:480px){
+
+.section-title span{
+
+font-size:13px;
+
+}
+
+.section-title h2{
+
+font-size:26px;
+
+}
+
+.service-card{
+
+border-radius:18px;
+
+}
+
+.service-card h3{
+
+font-size:22px;
+
+}
+
+.service-card img{
+
+height:160px;
+
+}
+
+.card-footer a{
+
+font-size:16px;
+
+}
+
+}
+
+
+/* ///////////////////////////////////////// media */
+
+/* ===========================
+   LARGE LAPTOP
+=========================== */
+@media (max-width:1200px){
+
+    .container{
+        width:95%;
+    }
+
+    .hero-content,
+    .about .container{
+        gap:40px;
+    }
+
+    .left h1{
+        font-size:48px;
+    }
+
+    .left p{
+        width:100%;
+        font-size:18px;
+        line-height:32px;
+    }
+
+    .student{
+        width:360px;
+    }
+
+    .cad{
+        width:250px;
+    }
+
+    .tablet{
+        width:170px;
+    }
+
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width:992px){
+
+    header{
+        height:auto;
+        padding:15px 0;
+    }
+
+    header .container{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero{
+        height:auto;
+        padding:70px 0;
+    }
+
+    .hero-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .left,
+    .right{
+        width:100%;
+    }
+
+    .left h1{
+        font-size:42px;
+    }
+
+    .left p{
+        width:100%;
+    }
+
+    .buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .right{
+        height:auto;
+        margin-top:40px;
+    }
+
+    .student{
+        position:static;
+        transform:none;
+        display:block;
+        margin:auto;
+        max-width:100%;
+        height:auto;
+    }
+
+        .cad,
+    .tablet{
+        display: none;
+    }
+
+    .features{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .about .container{
+        flex-direction:column;
+    }
+
+    .about-image,
+    .about-content{
+        width:100%;
+    }
+
+    .service-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+    .container{
+        width:92%;
+    }
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .left h1{
+        font-size:32px;
+        line-height:1.3;
+    }
+
+    .left p{
+        font-size:15px;
+        line-height:26px;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+
+    .why-choose h2,
+    .section-title h2,
+    .about-content h1{
+        font-size:28px;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    .service-container{
+        grid-template-columns:1fr;
+    }
+
+    .experience-box{
+        position:relative;
+        right:auto;
+        bottom:auto;
+        margin-top:20px;
+    }
+
+    .service-card img{
+        height:180px;
+    }
+
+}
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+@media (max-width:480px){
+
+    .left h1{
+        font-size:26px;
+    }
+
+    .subtitle,
+    .section-title span{
+        font-size:12px;
+    }
+
+    .feature-card h3,
+    .service-card h3{
+        font-size:20px;
+    }
+
+    .feature-card p,
+    .service-card p,
+    .about-content p{
+        font-size:14px;
+        line-height:24px;
+    }
+
+    .service-card{
+        padding:18px;
+    }
+
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
